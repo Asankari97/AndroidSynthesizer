@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGrey"
+    tools:context="uk.ac.brighton.as1189.androidsynthesizer.KeyboardScreen"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ImageView
+        android:id="@+id/sqaureWave"
+        android:layout_width="53dp"
+        android:layout_height="23dp"
+        android:layout_above="@+id/squareWaveBorder"
+        android:layout_alignStart="@+id/squareWaveBorder"
+        android:layout_marginBottom="-58dp"
+        app:srcCompat="@drawable/squarewave"
+        android:contentDescription="@string/square_wave_desc"/>
+
+    <View
+        android:id="@+id/squareWaveBorder"
+        android:layout_width="55dp"
+        android:layout_height="2dp"
+        android:layout_alignEnd="@+id/squareSwitch"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="58dp"
+        android:background="@color/darkGrey" />
+
+    <ImageView
+        android:id="@+id/sineWave"
+        android:layout_width="53dp"
+        android:layout_height="23dp"
+
+        android:layout_alignStart="@+id/sineSwitch"
+        android:layout_alignTop="@+id/sqaureWave"
+        app:srcCompat="@drawable/sinewave"
+        android:contentDescription="@string/sine_wave_desc"/>
+
+    <View
+        android:layout_width="55dp"
+        android:layout_height="2dp"
+        android:id="@+id/sineWaveBorder"
+        android:layout_alignStart="@+id/sineSwitch"
+        android:layout_below="@+id/sineWave"
+        android:background="@color/darkGrey" />
+
+    <Switch
+        android:id="@+id/squareSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignEnd="@+id/toneDecay"
+        android:layout_alignTop="@+id/sineSwitch"
+        android:thumb="@drawable/standard_switch_thumb" />
+
+    <Switch
+        android:id="@+id/sineSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="68dp"
+        android:thumb="@drawable/standard_switch_thumb" />
+
+    <SeekBar
+        android:id="@+id/toneDecay"
+        android:layout_width="296dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="130dp"
+        android:max="100"
+        android:progress="20"
+        android:thumb="@drawable/standard_switch_thumb" />
+
+    <Button
+        android:id="@+id/goToEq"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="22dp"
+        android:layout_marginTop="115dp"
+        android:background="@drawable/eq_icon" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="53dp"
+        android:layout_height="54dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/toneDecay"
+        android:layout_marginTop="200dp"
+        app:srcCompat="@drawable/record_button" />
+
+    <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/keyPadLow"
+        android:layout_alignParentStart="true"
+        android:background="@color/darkGrey"
+        android:fillViewport="true"
+        android:scrollbarThumbHorizontal="@drawable/scroll_thumb">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/c2"
+                android:layout_width="48dp"
+                android:layout_height="200dp"
+                android:background="@drawable/standard_key"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/c2sharp"
+                android:layout_width="32dp"
+                android:layout_height="200dp"
+                android:background="@drawable/sharp_key"
+                app:layout_constraintStart_toEndOf="@+id/c2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/d2"
+                android:layout_width="48dp"
+                android:layout_height="200dp"
+                android:background="@drawable/standard_key"
+                app:layout_constraintStart_toEndOf="@id/c2sharp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/d2sharp"
+                android:layout_width="32dp"
+                android:layout_height="200dp"
+                android:background="@drawable/sharp_key" />
+
+            <View
+                android:id="@+id/e2"
+                android:layout_width="48dp"
+                android:layout_height="200dp"
+                android:background="@drawable/standard_key" />
+
+            <View
+                android:id="@+id/f2"
+                android:layout_width="48dp"
+                android:layout_height="200dp"
+                android:background="@drawable/standard_key" />
+
+            <View
+                android:id="@+id/f2sharp"
+                android:layout_width="32dp"
+                android:layout_height="200dp"
+                android:background="@drawable/sharp_key" />
+
+            <View
+                android:id="@+id/g2"
+                android:layout_width="48dp"
+                android:layout_height="200dp"
+                android:background="@drawable/standard_key" />
+
+            <View
+                android:id="@+id/g2sharp"
+                android:layout_width="32dp"
+                android:layout_height="200dp"
+                android:background="@drawable/sharp_key" />
+
+            <View
+                android:id="@+id/a2"
+                android:layout_width="48dp"
+                android:layout_height="200dp"
+                android:background="@drawable/standard_key" />
+
+            <View
+                android:id="@+id/a2sharp"
+                android:layout_width="32dp"
+                android:layout_height="200dp"
+                android:background="@drawable/sharp_key" />
+
+            <View
+                android:id="@+id/b2"
+                android:layout_width="48dp"
+                android:layout_height="200dp"
+                android:background="@drawable/standard_key" />
+
+            <View
+                android:id="@+id/c3"
+                android:layout_width="48dp"
+                android:layout_height="200dp"
+                android:background="@drawable/standard_key"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/c3sharp"
+                android:layout_width="32dp"
+                android:layout_height="200dp"
+                android:background="@drawable/sharp_key"
+                app:layout_constraintStart_toEndOf="@+id/c2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/d3"
+                android:layout_width="48dp"
+                android:layout_height="200dp"
+                android:background="@drawable/standard_key"
+                app:layout_constraintStart_toEndOf="@id/c2sharp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/d3sharp"
+                android:layout_width="32dp"
+                android:layout_height="200dp"
+                android:background="@drawable/sharp_key" />
+
+            <View
+                android:id="@+id/e3"
+                android:layout_width="48dp"
+                android:layout_height="200dp"
+                android:background="@drawable/standard_key" />
+
+            <View
+                android:id="@+id/f3"
+                android:layout_width="48dp"
+                android:layout_height="200dp"
+                android:background="@drawable/standard_key" />
+
+            <View
+                android:id="@+id/f3sharp"
+                android:layout_width="32dp"
+                android:layout_height="200dp"
+                android:background="@drawable/sharp_key" />
+
+            <View
+                android:id="@+id/g3"
+                android:layout_width="48dp"
+                android:layout_height="200dp"
+                android:background="@drawable/standard_key" />
+
+            <View
+                android:id="@+id/g3sharp"
+                android:layout_width="32dp"
+                android:layout_height="200dp"
+                android:background="@drawable/sharp_key" />
+
+            <View
+                android:id="@+id/a3"
+                android:layout_width="48dp"
+                android:layout_height="200dp"
+                android:background="@drawable/standard_key" />
+
+            <View
+                android:id="@+id/a3sharp"
+                android:layout_width="32dp"
+                android:layout_height="200dp"
+                android:background="@drawable/sharp_key" />
+
+            <View
+                android:id="@+id/b3"
+                android:layout_width="48dp"
+                android:layout_height="200dp"
+                android:background="@drawable/standard_key" />
+        </LinearLayout>
+
+    </HorizontalScrollView>
+    
+    <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/darkGrey"
+        android:fillViewport="true"
+        android:scrollbarThumbHorizontal="@drawable/scroll_thumb"
+        android:id="@+id/keyPadLow">
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <View
+                android:id="@+id/c4"
+                android:layout_width="48dp"
+                android:layout_height="200dp"
+                android:background="@drawable/standard_key"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/c4sharp"
+                android:layout_width="32dp"
+                android:layout_height="200dp"
+                android:background="@drawable/sharp_key"
+                app:layout_constraintStart_toEndOf="@+id/c2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/d4"
+                android:layout_width="48dp"
+                android:layout_height="200dp"
+                android:background="@drawable/standard_key"
+                app:layout_constraintStart_toEndOf="@id/c2sharp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/d4sharp"
+                android:layout_width="32dp"
+                android:layout_height="200dp"
+                android:background="@drawable/sharp_key" />
+
+            <View
+                android:id="@+id/e4"
+                android:layout_width="48dp"
+                android:layout_height="200dp"
+                android:background="@drawable/standard_key" />
+
+            <View
+                android:id="@+id/f4"
+                android:layout_width="48dp"
+                android:layout_height="200dp"
+                android:background="@drawable/standard_key" />
+
+            <View
+                android:id="@+id/f4sharp"
+                android:layout_width="32dp"
+                android:layout_height="200dp"
+                android:background="@drawable/sharp_key" />
+
+            <View
+                android:id="@+id/g4"
+                android:layout_width="48dp"
+                android:layout_height="200dp"
+                android:background="@drawable/standard_key" />
+
+            <View
+                android:id="@+id/g4sharp"
+                android:layout_width="32dp"
+                android:layout_height="200dp"
+                android:background="@drawable/sharp_key" />
+
+            <View
+                android:id="@+id/a4"
+                android:layout_width="48dp"
+                android:layout_height="200dp"
+                android:background="@drawable/standard_key" />
+
+            <View
+                android:id="@+id/a4sharp"
+                android:layout_width="32dp"
+                android:layout_height="200dp"
+                android:background="@drawable/sharp_key" />
+
+            <View
+                android:id="@+id/b4"
+                android:layout_width="48dp"
+                android:layout_height="200dp"
+                android:background="@drawable/standard_key" />
+
+            <View
+                android:id="@+id/c5"
+                android:layout_width="48dp"
+                android:layout_height="200dp"
+                android:background="@drawable/standard_key"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/c5sharp"
+                android:layout_width="32dp"
+                android:layout_height="200dp"
+                android:background="@drawable/sharp_key"
+                app:layout_constraintStart_toEndOf="@+id/c2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/d5"
+                android:layout_width="48dp"
+                android:layout_height="200dp"
+                android:background="@drawable/standard_key"
+                app:layout_constraintStart_toEndOf="@id/c2sharp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/d5sharp"
+                android:layout_width="32dp"
+                android:layout_height="200dp"
+                android:background="@drawable/sharp_key" />
+
+            <View
+                android:id="@+id/e5"
+                android:layout_width="48dp"
+                android:layout_height="200dp"
+                android:background="@drawable/standard_key" />
+
+            <View
+                android:id="@+id/f5"
+                android:layout_width="48dp"
+                android:layout_height="200dp"
+                android:background="@drawable/standard_key" />
+
+            <View
+                android:id="@+id/f5sharp"
+                android:layout_width="32dp"
+                android:layout_height="200dp"
+                android:background="@drawable/sharp_key" />
+
+            <View
+                android:id="@+id/g5"
+                android:layout_width="48dp"
+                android:layout_height="200dp"
+                android:background="@drawable/standard_key" />
+
+            <View
+                android:id="@+id/g5sharp"
+                android:layout_width="32dp"
+                android:layout_height="200dp"
+                android:background="@drawable/sharp_key" />
+
+            <View
+                android:id="@+id/a5"
+                android:layout_width="48dp"
+                android:layout_height="200dp"
+                android:background="@drawable/standard_key" />
+
+            <View
+                android:id="@+id/a5sharp"
+                android:layout_width="32dp"
+                android:layout_height="200dp"
+                android:background="@drawable/sharp_key" />
+
+            <View
+                android:id="@+id/b5"
+                android:layout_width="48dp"
+                android:layout_height="200dp"
+                android:background="@drawable/standard_key" />
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Android Synthesizer</string>
+    <string name="sine">Sine</string>
+    <string name="saw">Saw</string>
+    <string name="square">Square</string>
+    <string name="fingerlocation_tracker">Finger Location Tracker, Pink</string>
+    <string name="velocity">Velocity:</string>
+    <string name="c2">C2</string>
+    <string name="c2sharp">C2#</string>
+    <string name="sine_wave_desc">Sine Wave Shape</string>
+    <string name="square_wave_desc">Square Wave Shape</string>
+    <string name="hertz">Hz</string>
+    <string name="decibels">dB</string>
+</resources>

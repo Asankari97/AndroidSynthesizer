@@ -1,0 +1,10 @@
+<vector android:height="24dp" android:viewportHeight="128"
+    android:viewportWidth="128" android:width="24dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#555" android:name="Rectangle 1" android:pathData="m68.5 10.5v107h-9v-107zm-11.5 -2.5v112h14v-112z"/>
+    <path android:fillColor="#555" android:name="Rectangle 1 copy" android:pathData="m51.5 26.5v75h-9v-75zm-11.5 -2.5v80h14v-80z"/>
+    <path android:fillColor="#555" android:name="Rectangle 1 copy 2" android:pathData="m34.5 18.5v91h-9v-91zm-11.5 -2.5v96h14v-96z"/>
+    <path android:fillColor="#555" android:name="Rectangle 1 copy 6" android:pathData="m85.5 18.5v91h-9v-91zm-11.5 -2.5v96h14v-96z"/>
+    <path android:fillColor="#555" android:name="Rectangle 1 copy 5" android:pathData="m102.5 26.5v75h-9v-75zm-11.5 -2.5v80h14v-80z"/>
+    <path android:fillColor="#555" android:name="Rectangle 1 copy 3" android:pathData="m17.5 34.5v59h-9v-59zm-11.5 -2.5v64h14v-64z"/>
+    <path android:fillColor="#555" android:name="Rectangle 1 copy 4" android:pathData="m119.5 34.5v59h-9v-59zm-11.5 -2.5v64h14v-64z"/>
+</vector>
